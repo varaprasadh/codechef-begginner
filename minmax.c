@@ -12,7 +12,7 @@ void miniMaxSum(int arr_size, int* arr) {
   int count=0,sum=0,j;
    for(int i=0;i<arr_size;i++){
        j=i;
-     while(count<4){
+     while(count<arr_size-1){
         j=(j+1)%arr_size;
         sum+=arr[j];
         count++;
